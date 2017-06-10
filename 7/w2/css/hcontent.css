@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hcontent-warpper ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.hcontent-warpper ul li div{
+    font-size: 12px;
+    color: #666;
+}
+
+.hcontent-warpper .course-name{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.hcontent-warpper .course-desc{
+    margin-bottom: 20px;
+}
+
+.course-desc-box{
+    position: absolute;
+    width: 250px;
+    background: #fff;
+    padding-left: 10px;
+}
+
+.course-list li{
+    margin-top: 5px;
+    margin-bottom:2px
+}
+
+.course-container{
+    position: relative;
+    width: 250px;
+    height: 230px;
+    background: #fff;
+}
+.course-desc{
+    display: none;
+}
+.course-time-icon{
+    background: url("../images/clok_a413ecf.png") 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+
+.course-level-icon{
+    background: url(https://s1.jikexueyuan.com/common/images/tow-ji_ec2b553.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.course-te-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 170px;
+    margin-top: 5px;
+}
+
+.course-study-num{
+    /*display: none;*/
+    margin-left: 70px;
+}

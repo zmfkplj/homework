@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+
+        function people(color) {
+            this.eye = color;
+            this.header = "";
+        }
+
+        people.prototype.single = function () {
+            alert(this.header + this.eye);
+        }
+
+        function yellowman(color) {
+            people.call(this, color);
+        }
+        yellowman.prototype = Object.create(people.prototype);
+        yellowman.prototype.eye = "black";
+
+        var p = new yellowman("blue");
+        p.single();
+        console.log(p);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+//        var r = /a(b+)e(d+)a/g;
+//        var arr = r.exec('_abbbedabba');
+//        console.log(arr);
+//
+//        var arr2 = r.exec('_abbba_abba');
+//        console.log(arr2);
+//
+//        console.log('_abbbedabba'.match(r));
+//        console.log('_abbbedabba'.search(r));
+//        console.log('_abbbedabba'.replace(r,'zzz'));
+//        console.log("hello world".replace(/(\w+)\s(\w+)/,"$2 $1"));
+//        console.log('abc'.replace('b','[$`-$&-$\']'));
+
+//        console.log('a,   b, c, d'.split(/, */,5));
+//        console.log('a,  b,c, d'.split(/, */, 2));
+//
+//        console.log('a,  b,c, d'.split(/, */));
+
+//        var person={
+//            name:"zj",
+//            age:30,
+//            eat:function () {
+//                alert(name + ' eat');
+//            }
+//        }
+//        person.eat();
+
+//        function Person() {
+//
+//        }
+//
+//        Person.prototype = {
+//            name:"zhoujun",
+//            age:30,
+//            eat:function () {
+//                alert("eating...");
+//            }
+//        }
+//
+//        var p = new Person();
+//        p.eat();
+
+//创建对象方法一
+//    //封装
+//        (function () {
+//            var n = "zj";
+//
+//            function People(name) {
+//                this.name = name;
+//            }
+//
+//            People.prototype.say = function () {
+//                alert("peo-hello"+this.name);
+//            }
+//
+//            window.People = People;
+//        }());
+//
+//    (function () {
+//        function Student(name) {
+//            this.name = name
+//        }
+//        Student.prototype = new People();
+//
+//        //父类中方法
+//        var superSay = Student.prototype.say;
+//
+//        //重写
+//        Student.prototype.say = function () {
+//            superSay.call(this);
+//            alert("student hello"+this.name);
+//        }
+//
+//        window.Student = Student;
+//    }());
+//
+//
+//        //继承
+//        var s = new Student("xxzz");
+//        s.say();
+
+//创建对象方法二
+        function Person(name) {
+            var _this = {};
+            _this._name = name;
+            _this.sayHello = function () {
+                alert("Hello"+_this._name);
+            }
+            return _this;
+        }
+
+        function Teacher(name) {
+            var _this = {};
+            _this._name = name
+            var _this = Person(_this._name);
+            var superSay = _this.sayHello;
+            _this.sayHello = function () {
+                superSay();
+                alert("tea-hello"+_this._name);
+            }
+            return _this;
+        }
+
+        var t = Teacher("zj");
+        t.sayHello();
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

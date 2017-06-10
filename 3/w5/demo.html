@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D魔方</title>
+    <style type="text/css">
+
+        /** 容器*/
+        .box{
+            /*魔方动画设置*/
+            -webkit-animation: boxanimation ease-in-out 6s infinite forwards;
+            -webkit-perspective: 1000px;
+            -webkit-perspective-origin: 25% 75%;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transform-origin:90px 90px 90px;
+        }
+
+        /*魔方动画效果*/
+        @keyframes boxanimation{
+            16%{-webkit-transform: rotatey(-90deg);}
+            33%{-webkit-transform: rotatey(-90deg) rotatez(135deg);}
+            50%{-webkit-transform: rotatey(225deg) rotatez(135deg);}
+            66%{-webkit-transform: rotatey(135deg) rotatex(135deg);}
+            83%{-webkit-transform: rotatex(135deg);}
+        }
+
+        /*魔方面一*/
+        .one{
+            width: 180px;
+            height: 180px;/* 这里定义每个面长宽都是180px */
+            position: absolute;/* 设置绝对定位，方便后面控制每个面的位置*/
+            -webkit-transform: translatez(0px);/*对这个面进行位置的移动*/
+        }
+
+        /*魔方面二*/
+        .two{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            -webkit-transform: translatex(-90px) translatez(90px) rotatey(90deg);
+        }
+
+        /*魔方面三*/
+        .three{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            -webkit-transform: translatez(90px) translatey(90px) rotatex(90deg);
+        }
+
+        /*魔方面四*/
+        .four{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            -webkit-transform: translatez(180px);
+        }
+
+        /*魔方面五*/
+        .five{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            -webkit-transform: translatez(90px) translatey(-90px) rotatex(90deg);
+        }
+
+        /*魔方面六*/
+        .six{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            -webkit-transform:translatex(90px) translatez(90px) translatey(0px) rotatex(90deg) rotatey(90deg) rotateZ(-90deg);
+        }
+
+        /*魔方面一下的九个小面*/
+        .one div{
+            width: 54px;
+            height: 54px;
+            border-radius: 4px;
+            float:left;
+            border: 3px solid #000;
+            background: #5dff2f;
+        }
+
+        /*魔方面二下的九个小面*/
+        .two div{
+            width: 54px;
+            height: 54px;
+            border-radius: 4px;
+            float:left;
+            border: 3px solid #000;
+            background: #ff26c2;
+        }
+
+        /*魔方面三下的九个小面*/
+        .three div{
+            width: 54px;
+            height: 54px;
+            border-radius: 4px;
+            float:left;
+            border: 3px solid #000;
+            background: #d00eff;
+        }
+
+        /*魔方面四下的九个小面*/
+        .four div{
+            width: 54px;
+            height: 54px;
+            border-radius: 4px;
+            float:left;
+            border: 3px solid #000;
+            background: #ff231a;
+        }
+
+        /*魔方面五下的九个小面*/
+        .five div{
+            width: 54px;
+            height: 54px;
+            border-radius: 4px;
+            float:left;
+            border: 3px solid #000;
+            background: rgba(232, 197, 88, 0.72);
+        }
+
+        /*魔方面六下的九个小面*/
+        .six div{
+            width: 54px;
+            height: 54px;
+            border-radius: 4px;
+            float:left;
+            border: 3px solid #000;
+            background: rgba(36, 255, 192, 0.95);
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="view" style="width: 180px; height: 180px; margin:90px auto 0 auto;">
+
+    <!-- 魔方六面 -->
+    <div class="box">
+        <div class="one">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="two">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="three">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="four">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="five">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="six">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

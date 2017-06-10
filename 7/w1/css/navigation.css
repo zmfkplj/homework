@@ -1,0 +1,67 @@
+.navigation-wrapper{
+    position: relative;
+    width:897px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    margin-top: -1px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.navigation-title{
+    margin-top: 15px;
+}
+
+.navigation-like{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navigation-like ul{
+    list-style: none;
+}
+
+.navigation-like ul li{
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.navigation-like ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation-like-name{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -4px;
+    font-size: 14px;
+}
+
+.navigation-like-activity-icon{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 80px;
+    margin-top: -8px;
+    font-size: 12px;
+    background: #ff9b28;
+    border: 1px solid #ff9b28;
+    color: #fff;
+}
+
+.navigation-like-activity-desc{
+    background: #ff9b28;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    margin-top: -5px;
+    font-size: 14px;
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院</title>
+    <link rel="stylesheet" href="css/index.css?v=1">
+    <script type="text/javascript" src="scripts/jquery-3.2.0.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <!-- 顶部 -->
+        <header>
+            <div class="w-1000 relative">
+                <a href="#" class="header-logo">
+                    <img src="images/logo.png" width="109" height="40">
+                </a>
+                <nav>
+                    <ul class="header-nav">
+                        <li>
+                            <a href="//www.jikexueyuan.com">首页</a>
+                        </li>
+                        <li>
+                            职业学院
+                            <div class="submenu school-list">
+                                <h3>前端学院</h3>
+                                <a href="//www.jikexueyuan.com/zhiye/web"><i class="web-icon"></i>Web 前端工程师</a>
+                                <a href="//www.jikexueyuan.com/zhiye/wechatapp"><i class="wechat-icon"></i>微信小程序工程师</a>
+                                <h3>后端学院</h3>
+                                <a href="//www.jikexueyuan.com/zhiye/python"><i class="python-icon"></i>Python Web工程师</a>
+                                <a href="//www.jikexueyuan.com/zhiye/go"><i class="go-icon"></i>Go语言工程师</a>
+                                <h3>移动学院</h3>
+                                <a href="//www.jikexueyuan.com/zhiye/android"><i class="android-icon"></i>Android工程师</a>
+                                <a href="//www.jikexueyuan.com/zhiye/ios"><i class="ios-icon"></i>iOS工程师</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-userinfo"></div>
+            </div>
+        </header>
+
+        <!-- pager -->
+        <div class="w-1000 mar-t20">
+            <!-- 左边分类 -->
+            <div id="aside" class="f-l">
+                <div class="aside-allCategory">
+                    <div class="hd">
+                        <a href="#">
+                            <i class="icon-course-curr"></i>
+                            <span class="name-course-curr">课程库</span>
+                        </a>
+                    </div>
+                    <div class="bd">
+                        <ul class="aside-cList">
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        移动开发
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    前端开发
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    后端开发
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<i class="icon-course-curr1"></i>-->
+                        <!--职业路径-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<i class="icon-course-curr2"></i>-->
+                        <!--知识体系图-->
+                    <!--</a>-->
+                <!--</li>-->
+
+            </div>
+
+            <!-- 主内容 -->
+            <div id="main" class="f-r">
+
+                <!-- 菜单 -->
+                <div class="main-nav">
+                    <div class="main-nav-cag">
+                        <ul>
+                            <li class="main-nav-cag-name">
+                                <a href="#">
+                                    移动开发
+                                </a>
+                            </li>
+                            <li id="menu-new">
+                                <a href="#">
+                                    最新
+                                </a>
+                                <div class="main-submenu-new main-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">最新</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">最热</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="menu-kc">
+                                <a href="#">
+                                    课程类型
+                                </a>
+                                <div class="main-submenu-kc main-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">VIP</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">免费</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">认证专享</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="menu-type">
+                                <a href="#">
+                                    内容类型
+                                </a>
+                                <div class="main-submenu-type main-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">知识精讲</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">项目实战</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="menu-level">
+                                <a href="#">
+                                    难度等级
+                                </a>
+                                <div class="main-submenu-level main-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">初级</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中级</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">高级</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">全部</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 视图模式 -->
+                    <div class="main-view-mode">
+                        <ul>
+                            <li class="kuai-icon">
+                                <div class="icon"></div>
+                            </li>
+                            <li class="list-icon">
+                                <div class="icon"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 内容 -->
+                <div id="main-content"></div>
+
+                <!-- 分页 -->
+                <div class="page-nav">
+                    <div class="page-first">首页</div>
+                    <div class="page-next">下一页</div>
+                    <div class="page-list">
+                        <ul>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">...</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-pre">上一页</div>
+                    <div class="page-last">未页</div>
+                    <div class="page-size">
+                        <span>共90页</span>
+                        <span>当前</span>
+                        <input type="text" value="1" readonly>
+                        页
+                        <button type="button">确定</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="bottom-info">
+            <div class="bottom-info-content">
+                <div class="bottom-info-logo">
+                    <img src="images/jk-logo-footer.png" width="109" height="40">
+                    <div class="bottom-info-logo-desc">极客学院，编程是一种信仰！</div>
+                </div>
+
+                <div class="bottom-info-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                职业学院
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                会员课程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                极客社区
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                其他
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Web前端工程师
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                课程库
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                技术问答
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                关于我们
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Python Web工程师
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                知识体系图
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Wiki
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                加入我们
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Go语言工程师
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                职业路径图
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                资源下载
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                讲师合作
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                iOS工程师
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                微信小程序工程师
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                系列课程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                联系我们
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="bottom-info-service">
+                    服务热线:400-678-8266
+                    <div class="bottom-info-service-ios">
+                        iPhone
+                    </div>
+                    <div class="bottom-info-service-android">
+                        Android
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+</html>

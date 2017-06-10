@@ -1,0 +1,24 @@
+.con{
+	/**display: -webkit-box;*/
+	display: -webkit-flex;
+	width: 600;
+	background-color: yellow;
+}
+
+.first{
+	height: 100px;
+	-webkit-flex:1;
+	background-color: green;
+}
+
+#second{
+	height: 100px;
+	-webkit-flex:1;
+	background-color: red;
+}
+
+#three{
+	height: 200px;
+	-webkit-flex:2;
+	background-color: blue;
+}

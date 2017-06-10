@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+
+    <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 801px)" href="css/pc.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css" type="text/css">
+
+    <link rel="shortcut icon"  href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!------------------------------------------------------------- 移动端版本 ------------------------------------------------------------->
+    <div class="mobile_wrapper">
+        <header>
+            <div class="weather">
+                <div class="weather-outline">
+                    <div class="weather-num">19°</div>
+                    <div class="weather-status">
+                        <p>广州</p>
+                        <p>88 良</p>
+                    </div>
+                </div>
+            </div>
+            <a>
+                <div class="login"></div>
+            </a>
+        </header>
+
+        <!-- logo -->
+        <div class="logo">
+            <img src="images/plus_logo.png"  alt="百度一下，你就知道">
+        </div>
+
+        <!-- 搜索 -->
+        <form id="index_form">
+            <input class="se_input" type="text">
+            <button class="se_btn" type="button">百度一下</button>
+        </form>
+
+        <!-- 导航菜单栏 -->
+        <div class="navs">
+            <div class="ns-swipe-item">
+                <a class="ns-item" href="javascript:;" id="" data-stats="10|2|navs|a1_l12" data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:12,&quot;title&quot;:&quot;\u5173\u6ce8&quot;};ref:index_iphone;">
+                    <i class="ns-focus ns-icon"></i>
+                    <span class="ns-text">关注</span>
+                </a>
+            </div>
+
+            <div class="ns-swipe-item">
+                <a class="ns-item" href="http://m.news.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1" data-stats="10|2|navs|a1_l1" data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:1,&quot;title&quot;:&quot;\u65b0\u95fb&quot;};ref:index_iphone;url:http://m.news.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1;">
+                    <i class="ns-news ns-icon"></i>
+                    <span class="ns-text">新闻</span>
+                </a>
+            </div>
+
+            <div class="ns-swipe-item">
+                <a class="ns-item" href="http://dushu.m.baidu.com" data-stats="10|2|navs|a1_l2" data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:2,&quot;title&quot;:&quot;\u5c0f\u8bf4&quot;};ref:index_iphone;url:http://dushu.m.baidu.com;">
+                    <i class="ns-novel ns-icon"></i>
+                    <span class="ns-text">小说</span>
+                </a>
+            </div>
+
+            <div class="ns-swipe-item">
+                <a class="ns-item" href="https://sv.baidu.com" data-stats="10|2|navs|a1_l3" data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:3,&quot;title&quot;:&quot;\u89c6\u9891&quot;};ref:index_iphone;url:https://sv.baidu.com;">
+                    <i class="ns-video ns-icon"></i>
+                    <span class="ns-text">视频</span>
+                </a>
+            </div>
+
+            <div class="ns-swipe-item">
+                <a class="ns-item" href="https://m.nuomi.com/?cid=wise_shouye_nuomi" data-stats="10|2|navs|a1_l4" data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:4,&quot;title&quot;:&quot;\u7cef\u7c73&quot;};ref:index_iphone;url:https://m.nuomi.com/?cid=wise_shouye_nuomi;">
+                    <i class="ns-life ns-icon"></i>
+                    <span class="ns-text">糯米</span>
+                </a>
+            </div>
+
+            <div class="ns-swipe-item">
+                <a class="ns-item" href="http://map.baidu.com/mobile/webapp/index/index?itj=45&amp;wtj=wi&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1" data-schema="baidumap://map?src=wise.show.index.nav" data-stats="10|2|navs|a1_l5" data-thunder="tid:11;ct:1;cst:2;logFrom:navs;logInfo:nav;logExtra:{&quot;pos&quot;:5,&quot;title&quot;:&quot;\u5730\u56fe&quot;};ref:index_iphone;url:http://map.baidu.com/mobile/webapp/index/index?itj=45&amp;wtj=wi&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1;">
+                    <i class="ns-map ns-icon"></i>
+                    <span class="ns-text">地图</span>
+                </a>
+            </div>
+        </div>
+
+        <!--  图片新闻列表 -->
+        <div class="pic_news">
+            <ul>
+                <li>
+                    <div class="text_content">
+                        <h2>中国男人与非洲妻子的幸福生活</h2>
+                    </div>
+                    <div class="pic_content">
+                        <div class="img-wrap"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=818918109,2152828108&amp;fm=170&amp;s=AA935D8502212F115AA105AC0300F040&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                        <div class="img-wrap"><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2468828872,3391423713&amp;fm=170&amp;s=209014D11A6337325C9CA127030070C3&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                        <div class="img-wrap"><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1064691908,3916445403&amp;fm=170&amp;s=BAA469800A4F0453105961970300E0C2&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                    </div>
+
+                    <div class="news-from">
+                        <span class="src-net">指尖延痛</span>
+                        <span class="src-time">15:49</span>
+                        <span class="src-icon-rec isAndroid">推荐</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="text_content">
+                        <h2>中国男人与非洲妻子的幸福生活</h2>
+                    </div>
+                    <div class="pic_content">
+                        <div class="img-wrap"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=818918109,2152828108&amp;fm=170&amp;s=AA935D8502212F115AA105AC0300F040&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                        <div class="img-wrap"><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2468828872,3391423713&amp;fm=170&amp;s=209014D11A6337325C9CA127030070C3&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                        <div class="img-wrap"><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1064691908,3916445403&amp;fm=170&amp;s=BAA469800A4F0453105961970300E0C2&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                    </div>
+
+                    <div class="news-from">
+                        <span class="src-net">指尖延痛</span>
+                        <span class="src-time">15:49</span>
+                        <span class="src-icon-rec isAndroid">推荐</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="text_content">
+                        <h2>中国男人与非洲妻子的幸福生活</h2>
+                    </div>
+                    <div class="pic_content">
+                        <div class="img-wrap"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=818918109,2152828108&amp;fm=170&amp;s=AA935D8502212F115AA105AC0300F040&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                        <div class="img-wrap"><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2468828872,3391423713&amp;fm=170&amp;s=209014D11A6337325C9CA127030070C3&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                        <div class="img-wrap"><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1064691908,3916445403&amp;fm=170&amp;s=BAA469800A4F0453105961970300E0C2&amp;w=218&amp;h=146&amp;img.PNG"></div>
+                    </div>
+
+                    <div class="news-from">
+                        <span class="src-net">指尖延痛</span>
+                        <span class="src-time">15:49</span>
+                        <span class="src-icon-rec isAndroid">推荐</span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------- PC端版本 --------------------------------------------------------------->
+        <div class="pc_wrapper">
+
+            <!-- 顶部菜单 -->
+            <header>
+                <nav>
+                    <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                    <a href="http://news.baidu.com">新闻</a>
+                    <a href="http://www.hao123.com">hao123</a>
+                    <a href="http://map.baidu.com">地图</a>
+                    <a href="http://v.baidu.com">视频</a>
+                    <a href="http://tieba.baidu.com">贴吧</a>
+                    <a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+
+                    <!-- 设置菜单 -->
+                    <div class="setting-menu">
+                        <a class="baidu-nav" href="javascript:;">设置</a>
+                        <!-- 下拉菜单 -->
+                        <div class="baidu-setting">
+                            <span class="icon-trangle"></span>
+                            <a href="javascritp:;">搜索设置</a>
+                            <a href="//www.baidu.com/gaoji/advanced.html">高级搜索</a>
+                            <a href="javascritp:;">关闭预测</a>
+                            <a href="javascritp:;">搜索历史</a>
+                        </div>
+                    </div>
+                    <a href="javascript:;" id="navMore" class="more">更多产品</a>
+                </nav>
+            </header>
+
+            <!-- 更多菜单子列表 -->
+            <div class="more-product" id="moreProduct">
+                <ul>
+                    <li class="more-sub-btn">
+                        <a href="javascript:;">更多产品</a>
+                    </li>
+                    <li>
+                        <a href="http://www.baidu.com/?cid=002540"><span class="more-sub-one"></span>糯米</a>
+                    </li>
+                    <li>
+                        <a href="http://zhidao.baidu.com"><span class="more-sub-two"></span>知道</a>
+                    </li>
+                    <li>
+                        <a href="http://music.baidu.com"><span class="more-sub-three"></span>音乐</a>
+                    </li>
+                    <li>
+                        <a href="http://image.baidu.com"><span class="more-sub-four"></span>图片</a>
+                    </li>
+                    <li>
+                        <a href="http://wenku.baidu.com"><span class="more-sub-five"></span>文库</a>
+                    </li>
+                    <li>
+                        <a href="http://top.baidu.com"><span class="more-sub-six"></span>风云榜</a>
+                    </li>
+                    <li>
+                        <a href="http://e.baidu.com?refer=888"><span class="more-sub-sev"></span>百度推广</a>
+                    </li>
+                    <li class="more-all">
+                        <a href="http://www.baidu.com/more">全部产品</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 搜索区域 -->
+            <div class="content">
+                <div class="search-form">
+                    <img src="images/bd_logo1.png" alt="百度一下">
+                    <form action="https://www.baidu.com/s" method="get" target="_blank">
+                        <input class="search-input" type="text" name="wd" autofocus>
+                        <button class="search-btn" type="submit">百度一下</button>
+                        <span class="icon-mic"></span>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 底部 -->
+            <footer>
+                <!-- 二维码 -->
+                <div id="saoma">
+                    <img src="images/rwm.png"><br>
+                    <div class="textbold_2">手机百度</div>
+                </div>
+
+                <p>
+                    <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                    <a href="http://home.baidu.com">关于百度</a>
+                    <a href="http://ir.baidu.com/">About Baidu</a>
+                </p>
+                <p class="copy-right">
+                    <span>@2017 Baidu</span>
+                    <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                    <a href="http://jianyi.baidu.com">意见反馈</a>
+                    <span>京ICP证030173</span>
+                    <span class="icon-copy-right"></span>
+                </p>
+            </footer>
+        </div>
+
+</body>
+</html>

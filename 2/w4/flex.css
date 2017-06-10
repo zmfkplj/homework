@@ -1,0 +1,30 @@
+.fleft{
+	float: left;
+	width: 300px;
+	background-color: red;
+
+}
+
+.fright{
+	float: left;
+	margin-left: 5px;
+	margin-top: 50px;
+	width: 300px;
+	background-color: green;
+}
+
+.col{
+	width: 600px;
+	-webkit-column-count:4;
+	-webkit-column-gap:50px;
+	-webkit-column-rule-style:dotted;
+}
+
+.center{
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}

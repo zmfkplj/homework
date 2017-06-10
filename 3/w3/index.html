@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+    <!-- 兼容性 -->
+    <style type="text/css">
+        .box {
+            -moz-border-radius: 15px; /* Firefox */
+            -webkit-border-radius: 15px; /* Safari and Chrome */
+            border-radius: 15px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+            -moz-box-shadow: 10px 10px 20px #000; /* Firefox */
+            -webkit-box-shadow: 10px 10px 20px #000; /* Safari and Chrome */
+            box-shadow: 10px 10px 20px #000; /* Opera 10.5+, future browsers and IE6+ using IE-CSS3 */
+            behavior: url(js/ie-css3.htc); /* This lets IE know to call the script on all elements which get the ‘box’ class */
+        }
+    </style>
+
+    <link rel="shortcut icon"  href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- 顶部菜单 -->
+        <header>
+            <nav>
+                <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                <a href="http://news.baidu.com">新闻</a>
+                <a href="http://www.hao123.com">hao123</a>
+                <a href="http://map.baidu.com">地图</a>
+                <a href="http://v.baidu.com">视频</a>
+                <a href="http://tieba.baidu.com">贴吧</a>
+                <a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+
+                <!-- 设置菜单 -->
+                <div class="setting-menu">
+                    <a class="baidu-nav" href="javascript:;">设置</a>
+                    <!-- 下拉菜单 -->
+                    <div class="baidu-setting">
+                        <span class="icon-trangle"></span>
+                        <a href="javascritp:;">搜索设置</a>
+                        <a href="//www.baidu.com/gaoji/advanced.html">高级搜索</a>
+                        <a href="javascritp:;">关闭预测</a>
+                        <a href="javascritp:;">搜索历史</a>
+                    </div>
+                </div>
+                <a href="javascript:;" id="navMore" class="more">更多产品</a>
+            </nav>
+        </header>
+
+        <!-- 更多菜单子列表 -->
+        <div class="more-product" id="moreProduct">
+            <ul>
+                <li class="more-sub-btn">
+                    <a href="javascript:;">更多产品</a>
+                </li>
+                <li>
+                    <a href="http://www.baidu.com/?cid=002540"><span class="more-sub-one"></span>糯米</a>
+                </li>
+                <li>
+                    <a href="http://zhidao.baidu.com"><span class="more-sub-two"></span>知道</a>
+                </li>
+                <li>
+                    <a href="http://music.baidu.com"><span class="more-sub-three"></span>音乐</a>
+                </li>
+                <li>
+                    <a href="http://image.baidu.com"><span class="more-sub-four"></span>图片</a>
+                </li>
+                <li>
+                    <a href="http://wenku.baidu.com"><span class="more-sub-five"></span>文库</a>
+                </li>
+                <li>
+                    <a href="http://top.baidu.com"><span class="more-sub-six"></span>风云榜</a>
+                </li>
+                <li>
+                    <a href="http://e.baidu.com?refer=888"><span class="more-sub-sev"></span>百度推广</a>
+                </li>
+                <li class="more-all">
+                    <a href="http://www.baidu.com/more">全部产品</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 搜索区域 -->
+        <div class="content">
+            <div class="search-form">
+                <img src="images/bd_logo1.png" alt="百度一下">
+                <form action="https://www.baidu.com/s" method="get" target="_blank">
+                    <input class="search-input" type="text" name="wd" autofocus>
+                    <button class="search-btn" type="submit">百度一下</button>
+                    <span class="icon-mic"></span>
+                </form>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <footer>
+            <!-- 二维码 -->
+            <div id="saoma">
+                <img src="images/rwm.png"><br>
+                <div class="textbold_2">手机百度</div>
+            </div>
+
+            <p>
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                <a href="http://home.baidu.com">关于百度</a>
+                <a href="http://ir.baidu.com/">About Baidu</a>
+            </p>
+            <p class="copy-right">
+                <span>@2017 Baidu</span>
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com">意见反馈</a>
+                <span>京ICP证030173</span>
+                <span class="icon-copy-right"></span>
+            </p>
+
+        </footer>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

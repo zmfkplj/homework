@@ -1,0 +1,103 @@
+body{
+	background-color: #0D7792;
+}
+
+
+/** 页头 */
+header{
+	height: 100px;
+	width: 800px;
+	margin: auto;
+	border-top: 200px;
+	background-color: #ffffff;
+}
+
+/** 导航栏 */
+header nav{
+	font-size: 14px;
+	margin-right: 20px;
+	margin-top: -20px;
+}
+
+/** 导航栏菜单 */
+header nav a:link{
+	 color:#FF0099;
+}
+
+.wrapper{
+	background-color: #ffffff;
+	border-radius: 20px;
+	width: 850px;
+	margin: auto;
+
+}
+
+.headertop{
+	height: 10px;
+
+}
+
+.logo{
+	margin-left: 15px;
+}
+
+
+/** 导航栏菜单 */
+.navmenu{
+	float: right;
+}
+
+/** 标题 */
+.mytitle{
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	height: 50px;
+	width: 800px;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+
+/** 注册说明信息 */
+.titleinfo{
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.labelbule{
+	font-weight: bold;
+	color:blue;
+}
+
+.tablecontent{
+	width: 800px;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+/** 表格 */
+table{
+	border: 1px;
+	border-spacing: 0px;
+	font-size: 12px;
+	line-height: 1.5;
+	border:solid #DFDCDC; 
+	border-width:1px 1px 1px 1px;	
+}
+
+
+/** 输入说明信息 */
+.descinfo{
+	color: #29cee9;
+}
+
+footer div{
+	font-size: 12px;
+	text-align: center;
+	margin: auto;
+	background-color: #ffffff;
+	width: 800px;
+	height: 50px;
+}

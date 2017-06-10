@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <style type="text/css">
+
+        *{
+            margin: 0;
+            padding:0;
+        }
+
+        .wrapper{
+            width: 960px;
+            margin-left: auto;
+            margin-right:auto;
+        }
+
+        .headdr{
+            background: red;
+            /*box-sizing: border-box;*/
+            width: 960px;
+            height: 100px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .sidebar{
+            background: #24ffc0;
+            /*box-sizing: border-box;*/
+            width: 220px;
+            height: 300px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            /*overflow: visible;*/
+            outline: 2px solid black;
+        }
+
+        .content{
+            background: #845bff;
+            /*box-sizing: border-box;*/
+            width: 720px;
+            height: 300px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .footer{
+            background: #ff26c2;
+            /*box-sizing: border-box;*/
+            width: 960px;
+            height: 100px;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="headdr"></div>
+        <div class="sidebar">
+            sdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdf
+            dfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfd
+            fdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdf
+            dsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfd
+            fdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdf
+            dsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdf
+            dfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfd
+            sdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdf
+            dfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdf
+            dfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdf
+            dfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfd
+            fdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfdsdfdfdfdfdfd
+        </div>
+        <div class="content"></div>
+        <div class="footer"></div>
+
+        <textarea rows="5" cols="60"></textarea>
+    </div>
+
+</body>
+</html>

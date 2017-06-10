@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            width: 100%;
+        }
+
+        header, footer{
+            width: 100%;
+            padding: 10px;
+            background: red;
+        }
+
+        .left, .right{
+            width: 200px;
+            padding: 10px;
+            background: green;
+        }
+
+        .main{
+            background: orange;
+            padding: 10px;
+            margin: 10px;
+            -webkit-box-flex: 1;
+            -webkit-box-ordinal-group: 2;
+        }
+
+        #page{
+            width: 100%;
+            display: -webkit-box;
+            -webkit-box-flex: 1;
+        }
+
+        .right{
+            background: yellow;
+            -webkit-box-ordinal-group: 3;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <div id="page">
+        <div class="main"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

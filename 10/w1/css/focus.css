@@ -1,0 +1,102 @@
+.focus-wrapper{
+    position: relative;
+    width:897px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    margin-top: -1px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.focus-nar-menu{
+    position: relative;
+    margin-top: 20px;
+    width: 895px;
+    cursor: pointer;
+}
+
+.focus-nar-menu-title{
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.focus-nar-menu ul{
+    list-style: none;
+}
+
+.focus-nar-menu ul li{
+    display: inline-block;
+    width: 124px;
+    height: 41px;
+    margin-left: 40px;
+}
+
+.focus-nar-menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+/*箭头向下*/
+.focus-nar-menu-arrow-down{
+    position: absolute;
+    display: inline-block;
+    width:0;
+    height:0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #666;
+    margin-top: 8px;
+}
+
+/*箭头向右*/
+.focus-nar-menu-arrow-right{
+    position: absolute;
+    display: inline-block;
+    width:0;
+    height:0;
+    border-top:5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #666;
+    margin-top: 5px;
+}
+
+.focus-nar-menu-arrow-num{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.focus-nar-menu-arrow-edit{
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 20px;
+    display: none;
+}
+
+.focus-nar-menu-arrow-edit ul{
+    list-style: none;
+}
+
+.focus-nar-menu-arrow-edit ul li{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+}
+
+.focus-custom-icon{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    background: url("../images/mine_set_818172e0.png?__sprite") no-repeat;
+    background-position: 0 0;
+}
+
+.focus-custom{
+    font-size: 14px;
+}
+
+

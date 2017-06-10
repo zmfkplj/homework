@@ -1,0 +1,230 @@
+html{
+	height: 100%;
+}
+
+body{
+	font: 12px arial;
+	height: 100%;
+	margin: 0px;
+}
+
+.wrapper{
+	min-width: 1000px;
+	min-height: 600px;
+	position: relative;
+	height: 100%;
+}
+
+#topmenu{
+	float: right;
+	margin-right: 10px;
+}
+
+#topmenu li{
+	float: left;
+	list-style: none;
+	font-size: 12px;
+	padding-left: 20px;
+	color: black;
+}
+
+#topmenu li a:link{
+	color: black;
+}
+
+#topmenu li a:hover{
+	color: blue;
+}
+
+/** 字加粗 */
+.textbold{
+	font-weight: bold;
+	color: black;
+}
+
+.textbold_2{
+	font-weight: bold;
+	color: rgba(10, 10, 15, 0.71);
+	font-size: 12px;
+}
+
+/** 更多产品菜单项 */
+.moremenu_a{
+	text-decoration:none;
+}
+
+#showmoremenu:hover #moremenu_list{
+	display: block;
+	right: 2px;
+	top:5px;
+	height: 99%;
+	background-color: #cccccc;
+}
+
+.moremenu_b{
+	padding: 5px 5px;
+	margin-top: -5px;
+	background-color: #2d78f4;
+	color: white;
+}
+
+
+
+/** header */
+header{
+	overflow: hidden;
+}
+
+/** header菜单 */
+header nav{
+	width: 400px;
+	float:right;
+}
+
+header nav a{
+	margin-left: 15px;
+}
+
+.content{
+	text-align: center;
+}
+
+.content form{
+	width:640px;
+	margin: 0 auto;
+}
+.content input{
+	width: 450px;
+	height: 34px;
+	float: left;
+}
+
+.content button{
+	width: 100px;
+	height: 39px;
+	float: left;
+}
+
+#input_mkf{
+	position: relative;
+	left:-160px;
+	top: 5px;
+	cursor:pointer;
+}
+
+#input_xj{
+	position: relative;
+	left:-170px;
+	top: 5px;
+	cursor:pointer;
+}
+
+
+form{
+	font-size: 0px;
+}
+
+/** 输入框中小图标 */
+.timgf_input{ 
+	padding-right:20px;
+	width: 550px;
+	/**
+	background:url("../images/timgf.jpg") no-repeat right 30px bottom 2px,
+	   url("../images/xianji.jpg") no-repeat right 5px bottom 2px;
+	   */
+	border: 1px solid #cccccc;
+	padding-left: 5px;
+	background-size:30px 30px;
+	/**cursor:pointer;*/
+}
+
+/** 更多产品标题 */
+#movetitle{
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+/** 更多产品列表 */
+#product{
+	margin-top: 25px;
+}
+
+#product a:link{
+	color: black;
+	 text-decoration:none;
+ }
+
+#product a:hover div{
+	color: black;
+	text-decoration:underline;
+}
+
+#product li{
+	list-style: none;
+	margin-left: -56px;
+}
+
+.product_name{
+	margin-left: 30px;
+}
+
+#allproduct{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+/** 更多产品分割线 */
+.sp_line{
+	background-color: rgba(144, 156, 231, 0.22);
+	width: 70px;
+	height: 1px;
+	margin:auto;
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+}
+
+#moremenu_list{
+	position: absolute;
+	width: 80px;
+	display:none;
+	border: 1px solid rgba(14, 11, 15, 0.65);
+}
+
+/** 搜索按钮 */
+#submit_button{
+	background-color: #2d78f4;
+	color: #ffffff;
+	font-size: 14px;
+	cursor:pointer;
+	border: 0px;
+}
+
+/** footer */
+footer{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+}
+
+/** 扫码 */
+#saoma{
+	text-align: center;
+}
+
+.more_oper{
+	color: rgba(10, 10, 15, 0.51);;
+}
+
+.more_oper a{
+	padding-right: 10px;
+}
+
+.more_oper a:link{
+	color: rgba(10, 10, 15, 0.51);
+}
+
+

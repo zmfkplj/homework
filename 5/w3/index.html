@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用JS开发简易计算器</title>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <label for="num1">数字1</label>
+    <input type="text" id="num1" required placeholder="请先输入数字1">
+    <select id="oper">
+        <option value="加">加</option>
+        <option value="减">减</option>
+        <option value="乘">乘</option>
+        <option value="除">除</option>
+    </select>
+    <label for="num2">数字2</label>
+    <input type="text" id="num2" required placeholder="请先输入数字2">
+    <button type="button" onclick="showResult()">计算等级</button>
+    <div id="result"></div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>正常盒子与怪异盒子对比</title>
+<style type="text/css">
+	.xiezi{
+		width: 100px;
+		height: 100px;
+		background-color: orange;
+		overflow: scroll;
+	}
+
+	.xiehe{
+		padding: 10PX;
+		width: 100px;
+		height: 100px;
+		background-color: green;
+		border: 5px solid red;
+
+	}
+
+
+	.xiezi1{
+		width: 100px;
+		height: 100px;
+		background-color: orange;
+	}
+
+	.xiehe1{
+		padding: 10PX;
+		width: 130px;
+		height: 130px;
+		background-color: green;
+		border: 5px solid red;
+		box-sizing: border-box;
+		box-shadow: 5px 5px 5px 10px rgba(0,0,0,.6);
+	}
+
+</style>
+<link rel="stylesheet" href="flexbox.css">
+</head>
+
+<body>
+	
+	<div class="xiehe">
+		<div class="xiezi">鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子</div>
+	</div>
+	
+	<hr>
+
+	<div class="xiehe1">
+		<div class="xiezi1">怪异鞋子</div>
+	</div>
+	
+</body>
+</html>

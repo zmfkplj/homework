@@ -1,0 +1,342 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font:12px arial;
+}
+
+.wrapper{
+    position: relative;
+    min-width: 810px;
+    min-height: 650px;
+    height: 100%;
+}
+
+/** 搜索框 */
+input{
+    outline: none;
+}
+
+/** 顶部菜单 */
+header{
+    overflow: hidden;
+}
+
+header nav{
+    float: right;
+    margin: 19px 0 5px 0;
+    padding:0 142px 0 0;
+}
+
+header nav a{
+    margin-left:20px;
+    color:#333;
+    float: left;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+header nav a:hover{
+    color: #00c;
+}
+
+/** 设置菜单 */
+.setting-menu{
+    position: absolute;
+    width: 100px;
+    height: 24px;
+    right:25px;
+
+}
+
+.setting-menu a{
+    margin: 0;
+    text-decoration: none;
+}
+.setting-menu:hover .baidu-setting{
+    display: block;
+}
+
+.setting-menu .baidu-setting{
+    position: absolute;
+    top:25px;
+    left: -16px;
+    width:60px;
+    border:1px solid #ddd;
+    -webkit-box-shadow:1px 1px 5px #ddd;/* Safari 和 Chrome */
+    -moz-box-shadow:1px 1px 5px #ddd;/* Firefox */
+    box-shadow:1px 1px 5px #ddd;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    display: none;
+    z-index: 99;
+    behavior: url(../js/ie-css3.htc);/* 通知IE浏览器调用脚本作用于'box'类 */
+}
+
+.setting-menu .baidu-setting a{
+    display: inline-block;
+    width: 100%;
+    color:#333;
+}
+
+.setting-menu .baidu-setting a:hover{
+    color:#ffffff;
+    background-color: #3385ff;
+}
+
+.setting-menu .icon-trangle{
+    top:-11px;
+    left:25px;
+    width: 0;
+    height: 0;
+    display: block;
+    position:absolute;
+    border:5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .icon-trangle:after{
+    content: '.';
+    top:-4px;
+    left:-5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position:absolute;
+    border:5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+/** 更多菜单 */
+.more-product{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    min-height: 600px;
+    width: 88px;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+    z-index: 999;
+    behavior: url(../js/ie-css3.htc);/* 通知IE浏览器调用脚本作用于'box'类 */
+}
+
+.more-product ul{
+    padding: 5px 0;
+    text-align: center;
+}
+
+.more-product li{
+    position: relative;
+    height: 60px;
+    padding-right: 14px;
+    padding-left: 15px;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.more-product span{
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 5px auto;
+    margin-bottom:5px;
+    background: url("../images/bdbri_icons_0a62ce1.png") no-repeat;
+}
+
+.more-product .more-sub-btn{
+    height: 20px;
+}
+
+.more-product .more-sub-btn a{
+    text-decoration: none;
+}
+
+.more-product a{
+    text-decoration: none;
+}
+
+.more-product a:hover{
+    text-decoration:underline;
+}
+
+.more-product .more-sub-one{
+    background: url("../images/bdbri_icons_0a62ce1.png") 0 0;
+}
+
+.more-product .more-sub-two{
+    background: url("../images/bdbri_icons_0a62ce1.png") -36px 0px;
+}
+
+.more-product .more-sub-three{
+    background: url("../images/bdbri_icons_0a62ce1.png") -74px 0px;
+}
+
+.more-product .more-sub-four{
+    background: url("../images/bdbri_icons_0a62ce1.png") -112px 0px;
+}
+
+.more-product .more-sub-five{
+    background: url("../images/bdbri_icons_0a62ce1.png") -150px 0px;
+}
+
+.more-product .more-sub-six{
+    background: url("../images/bdbri_icons_0a62ce1.png") -186px 0px;
+}
+
+.more-product .more-sub-sev{
+    background: url("../images/bdbri_icons_0a62ce1.png") -220px 0px;
+}
+
+.more-product .more-all{
+    border: none;
+}
+
+.more-product a{
+    color: #333;
+}
+
+/** 更多产品 */
+header nav .more{
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom:1px solid #38f;
+    margin-left: 19px;
+    margin-right:2px;
+    text-decoration:none;
+}
+
+header nav .more hover{
+    color:#ffffff;
+
+}
+
+/** 搜索区域 */
+.content{
+    position: relative;
+    top:38.2%;
+    text-align: center;
+}
+
+.content form{
+    width: 650px;
+    margin:10px auto;
+}
+.content .search-form{
+    position: relative;
+    height: 191px;
+    top:-191px;
+}
+
+.content img{
+    width: 270px;
+    height:120px;
+}
+
+.content .search-input{
+    width: 539px;
+    height: 28px;
+    border: 1px solid #ddd;
+    padding:3px 3px 0 7px;
+    border-right-width: 0;
+    vertical-align: middle;
+}
+
+.content .search-input:hover{
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus{
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+
+/**  搜索按钮 */
+.content .search-btn{
+    width: 100px;
+    height: 33px;
+    margin:-5px;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border:1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content .search-btn:hover{
+    background-color: #317ef3;
+}
+
+/**  搜索表单 */
+.content form{
+    position: relative;
+}
+
+/**  表单中麦克风 */
+.content .icon-mic{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top:10px;
+    right:108px;
+    background: url(../images/camera_new_5606e8f.png)  no-repeat;
+    cursor: pointer;
+}
+
+.content .icon-mic:hover{
+    background-position: 0 -20px;
+}
+
+/** 底部 */
+footer{
+    position: absolute;
+    bottom: 44px;
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer p a{
+    color: #00c;
+}
+
+footer p a:hover{
+    color: #00c;
+}
+
+footer .copy-right a{
+    color: #666;
+}
+
+footer .copy-right a:hover{
+    color: #666;
+}
+
+footer .icon-copy-right{
+    position: relative;
+    display: inline-block;
+    top:2px;
+    width: 14px;
+    height: 17px;
+    background: url(../images/icons_5859e57.png) no-repeat;
+}

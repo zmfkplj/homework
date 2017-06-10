@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font:12px arial;
+}
+
+#wrapper{
+    position: relative;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid #ccc;
+}
+
+/** header-left */
+.header-left{
+    color: #555;
+}
+
+.header-left-weather{
+    position: relative;
+    float: left;
+    margin-top: 8px;
+    margin-left:20px;
+}
+
+.header-left-weather-city{
+    display: inline-block;
+}
+
+.header-left-weather-icon{
+    display: inline-block;
+    position: absolute;
+    top:-2px;
+}
+
+
+.weather-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url("../images/a2.jpg?__sprite");
+    background-size: 20px 20px;
+}
+
+
+.header-left-weather-temp{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header-left-weather-pollution{
+    display: inline-block;
+    color: #38f;
+    font-weight: bold;
+}
+
+.header-left-weather-level{
+    display: inline-block;
+}
+
+.header-left-rule{
+    float: left;
+    line-height: 20px;
+    margin-top: 6px;
+    margin-left:10px;
+}
+
+.header-left-nav{
+    float: left;
+    line-height: 20px;
+    margin-top: 6px;
+    margin-left:10px;
+}
+
+.header-left-nav ul{
+    list-style: none;
+}
+
+.header-left-nav ul li{
+    float: left;
+    margin-right: 15px;
+}
+
+.header-left-nav ul li a{
+    color: #555;
+}
+
+/** header-right */
+.header-right{
+    position: relative;
+    width: 495px;
+    float: right;
+    margin-top: 5px;
+}
+
+.header-right a{
+    margin-left:20px;
+    color:#333;
+    float: left;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.header-right a:hover{
+    color: #00c;
+}
+
+.more{
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: #fff;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+
+/** 设置菜单 */
+.setting-menu{
+    position: absolute;
+    width: 100px;
+    height: 24px;
+    right:25px;
+
+}
+
+.setting-menu a{
+    margin: 0;
+    text-decoration: none;
+}
+.setting-menu:hover .baidu-setting{
+    display: block;
+}
+
+.setting-menu .baidu-setting{
+    position: absolute;
+    top:25px;
+    left: -16px;
+    width:60px;
+    border:1px solid #ddd;
+    -webkit-box-shadow:1px 1px 5px #ddd;/* Safari 和 Chrome */
+    -moz-box-shadow:1px 1px 5px #ddd;/* Firefox */
+    box-shadow:1px 1px 5px #ddd;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    display: none;
+    z-index: 99;
+    /*behavior: url(../js/ie-css3.htc);!* 通知IE浏览器调用脚本作用于'box'类 *!*/
+}
+
+.setting-menu .baidu-setting a{
+    display: inline-block;
+    width: 100%;
+    color:#333;
+}
+
+.setting-menu .baidu-setting a:hover{
+    color:#ffffff;
+    background-color: #3385ff;
+}
+
+.setting-menu .icon-trangle{
+    top:-11px;
+    left:25px;
+    width: 0;
+    height: 0;
+    display: block;
+    position:absolute;
+    border:5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .icon-trangle:after{
+    content: '.';
+    top:-4px;
+    left:-5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position:absolute;
+    border:5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+/** 更多菜单 */
+.more-product{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    min-height: 600px;
+    width: 88px;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+    z-index: 999;
+    behavior: url(../js/ie-css3.htc);/* 通知IE浏览器调用脚本作用于'box'类 */
+}
+
+.more-product ul{
+    padding: 5px 0;
+    text-align: center;
+}
+
+.more-product li{
+    position: relative;
+    height: 60px;
+    padding-right: 14px;
+    padding-left: 15px;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.more-product span{
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 5px auto;
+    margin-bottom:5px;
+    background: url("../images/bdbri_icons_0a62ce1.png") no-repeat;
+}
+
+.more-product .more-sub-btn{
+    height: 20px;
+}
+
+.more-product .more-sub-btn a{
+    text-decoration: none;
+}
+
+.more-product a{
+    text-decoration: none;
+}
+
+.more-product a:hover{
+    text-decoration:underline;
+}
+
+.more-product .more-sub-one{
+    background: url("../images/bdbri_icons_0a62ce1.png?__sprite") 0 0;
+}
+
+.more-product .more-sub-two{
+    background: url("../images/bdbri_icons_0a62ce1.png?__sprite") -36px 0px;
+}
+
+.more-product .more-sub-three{
+    background: url("../images/bdbri_icons_0a62ce1.png?__sprite") -74px 0px;
+}
+
+.more-product .more-sub-four{
+    background: url("../images/bdbri_icons_0a62ce1.png?__sprite") -112px 0px;
+}
+
+.more-product .more-sub-five{
+    background: url("../images/bdbri_icons_0a62ce1.png?__sprite") -150px 0px;
+}
+
+.more-product .more-sub-six{
+    background: url("../images/bdbri_icons_0a62ce1.png?__sprite") -186px 0px;
+}
+
+.more-product .more-sub-sev{
+    background: url("../images/bdbri_icons_0a62ce1.png?__sprite") -220px 0px;
+}
+
+.more-product .more-all{
+    border: none;
+}
+
+.more-product a{
+    color: #333;
+}
+
+/** 更多产品 */
+.header-right.more{
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom:1px solid #38f;
+    margin-left: 19px;
+    margin-right:2px;
+    text-decoration:none;
+}
+
+.header-right.more hover{
+    color:#ffffff;
+
+}
+
+
+
+.header-right ul{
+    list-style: none;
+}
+
+.header-right ul li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.header-right ul li a{
+    color: #555;
+}
+
+/** search */
+.search{
+    width: 645px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.search-input{
+    position: relative;
+}
+
+.search-input-text{
+    width: 530px;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    padding-left: 5px;
+}
+
+.search-input-camera{
+    width: 18px;
+    height: 19px;
+    display: inline-block;
+    position: absolute;
+    background-image: url("../images/camera_new_5606e8f.png?__sprite");
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.search-input-btn{
+    position: absolute;
+    width: 102px;
+    height: 41px;
+    background: #317ef3;;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #317ef3;
+    cursor: pointer;
+}
+
+/** maincontent */
+.maincontent{
+    position: relative;
+    width: 895px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.maincontent-nav{
+    width: 895px;
+    height: 38px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.maincontent-nav ul{
+    float: left;
+    list-style: none;
+    width: 850px;
+}
+
+.maincontent-nav ul li{
+    /*display: inline-block;*/
+    float: left;
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    /*background: #2a7beb;*/
+}
+
+.maincontent-nav ul li:first-child{
+    width: 120px;
+}
+
+.tabover{
+    background-color: #b3b6bb;
+}
+
+.tabselect{
+    background-color: #9a9da2;
+}
+
+.maincontent-nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.maincontent-nav-useicon{
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url("../images/card_setts_fdb17359.png?__sprite") no-repeat -15px 0;
+}
+
+.maincontent-nar-set{
+    float: right;
+    width: 20px;
+    height: 18px;
+    margin-top: 10px;
+    margin-right: 12px;
+    background: url("../images/card_setts_fdb17359.png?__sprite") no-repeat -121px -49px;
+}
+.maincontent-nar-set:hover{
+    float: right;
+    width: 20px;
+    height: 18px;
+    margin-top: 9px;
+    margin-right: 12px;
+    background: url("../images/card_setts_fdb17359.png?__sprite") no-repeat -121px -72px;
+}
+
+.footer{
+    color: #555;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer a{
+    color: #555;
+}
+
+.footer-copyright{
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,118 @@
+.shopping-wrapper{
+    position: relative;
+    width:897px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    margin-top: -1px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.shopping-content{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.shooping-hot-left{
+    /*float: left;*/
+    position: relative;
+    display: inline-block;
+}
+
+.shooping-hot-left ul{
+    list-style: none;
+}
+
+.shooping-hot-left li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.shopping-hot-left-big-pic{
+    position: relative;
+}
+
+.shopping-hot-left-big-desc{
+    position: absolute;
+    width: 175px;
+    height: 64px;
+    background: #fff;
+    margin-top: -80px;
+    margin-left: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.shopping-hot-left-big-desc-title{
+    margin-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid #ff0000;
+}
+
+.shopping-hot-left-big-desc-content{
+    margin-top: 5px;
+}
+
+.shopping-hot-left-big-desc-content span:nth-child(2){
+    color: #FF0000;
+}
+
+.shooping-hot-right{
+    width: 220px;
+    display: inline-block;
+    float: right;
+}
+
+.shooping-hot-right-top a{
+    text-decoration: none;
+    color: #000;
+}
+
+.shooping-hot-right-top p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.shooping-hot-right-top span{
+    font-size: 14px;
+    color: #808080;
+}
+
+.shooping-hot-right-top div{
+    font-size: 14px;
+    color: #0000cc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shooping-hot-right-bottom{
+    margin-top: 20px;
+}
+
+.shooping-hot-right-bottom p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.shooping-hot-right-bottom ul{
+    list-style: none;
+    font-size: 14px;
+}
+
+.shooping-hot-right-bottom ul li{
+    display: inline-block;
+    width: 90px;
+    height: 19px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.shooping-hot-right-bottom ul li a{
+    text-decoration: none;
+    color: #808080;
+}
